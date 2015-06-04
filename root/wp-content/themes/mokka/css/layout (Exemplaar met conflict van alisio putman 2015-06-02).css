@@ -1,0 +1,587 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 14px;
+  color: black;
+  font-family: arial, sans-serif;
+}
+#wrapper {
+  width: 960px;
+  margin: auto;
+  padding: auto;
+}
+a {
+  color: #000000;
+}
+.error_not_found {
+  text-align: center;
+}
+.section_header {
+  float: left;
+  margin: 20px 0px 0px 160px;
+}
+.section_header > h1 {
+  font-size: 17px;
+}
+.section_header > ul {
+  width: 760px;
+  margin: 0px 0px 0px 20px;
+  list-style: none;
+}
+#news > ul > li {
+  float: left;
+  width: 760px;
+  height: 100px;
+  border-top-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+#news > ul > li > .news_section_info {
+  float: left;
+  width: 50px;
+  height: 100px;
+}
+#news > ul > li > .news_section_info > .news_date,
+#news > ul > li > .news_section_info > .news_img,
+#news > ul > li > .news_section_info > .news_name {
+  margin: 5px 0px 5px 20px;
+}
+#news > ul > li > .news_section_info > .news_date,
+#news > ul > li > .news_section_info > .news_name {
+  width: 50px;
+  text-align: center;
+}
+#news > ul > li > .news_section_reaction {
+  float: left;
+  width: 640px;
+  height: 50px;
+  margin: 20px 0px 0px 50px;
+}
+#projects,
+#events,
+#articles,
+#ads {
+  width: 760px;
+  height: inherit;
+}
+#projects > ul,
+#events > ul,
+#articles > ul,
+#ads > ul {
+  list-style: none;
+}
+#projects > ul > .offset,
+#events > ul > .offset,
+#articles > ul > .offset,
+#ads > ul > .offset {
+  margin: 10px 0px 0px 50px;
+}
+#projects > ul .extra-height,
+#events > ul .extra-height,
+#articles > ul .extra-height,
+#ads > ul .extra-height {
+  height: 120px;
+}
+#projects > ul > li,
+#events > ul > li,
+#articles > ul > li,
+#ads > ul > li {
+  float: left;
+  width: 760px;
+  height: 100px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  margin: 10px 0px 10px 0px;
+}
+#projects > ul > li > a,
+#events > ul > li > a,
+#articles > ul > li > a,
+#ads > ul > li > a {
+  float: left;
+  width: 760px;
+  height: 100px;
+}
+#projects > ul > li > a > .project_title,
+#events > ul > li > a > .project_title,
+#articles > ul > li > a > .project_title,
+#ads > ul > li > a > .project_title,
+#projects > ul > li > a > .project_location,
+#events > ul > li > a > .project_location,
+#articles > ul > li > a > .project_location,
+#ads > ul > li > a > .project_location,
+#projects > ul > li > a > .project_description,
+#events > ul > li > a > .project_description,
+#articles > ul > li > a > .project_description,
+#ads > ul > li > a > .project_description,
+#projects > ul > li > a > .event_title,
+#events > ul > li > a > .event_title,
+#articles > ul > li > a > .event_title,
+#ads > ul > li > a > .event_title,
+#projects > ul > li > a > .event_location,
+#events > ul > li > a > .event_location,
+#articles > ul > li > a > .event_location,
+#ads > ul > li > a > .event_location,
+#projects > ul > li > a > .event_description,
+#events > ul > li > a > .event_description,
+#articles > ul > li > a > .event_description,
+#ads > ul > li > a > .event_description,
+#projects > ul > li > a > .article_name,
+#events > ul > li > a > .article_name,
+#articles > ul > li > a > .article_name,
+#ads > ul > li > a > .article_name,
+#projects > ul > li > a > .article_category,
+#events > ul > li > a > .article_category,
+#articles > ul > li > a > .article_category,
+#ads > ul > li > a > .article_category {
+  float: left;
+  width: 660px;
+  margin: 5px 0px 5px 20px;
+}
+#projects > ul > li > a > .project_title,
+#events > ul > li > a > .project_title,
+#articles > ul > li > a > .project_title,
+#ads > ul > li > a > .project_title,
+#projects > ul > li > a > .event_title,
+#events > ul > li > a > .event_title,
+#articles > ul > li > a > .event_title,
+#ads > ul > li > a > .event_title,
+#projects > ul > li > a > .project_date,
+#events > ul > li > a > .project_date,
+#articles > ul > li > a > .project_date,
+#ads > ul > li > a > .project_date,
+#projects > ul > li > a > .event_date,
+#events > ul > li > a > .event_date,
+#articles > ul > li > a > .event_date,
+#ads > ul > li > a > .event_date,
+#projects > ul > li > a > .article_date,
+#events > ul > li > a > .article_date,
+#articles > ul > li > a > .article_date,
+#ads > ul > li > a > .article_date,
+#projects > ul > li > a > .article_name,
+#events > ul > li > a > .article_name,
+#articles > ul > li > a > .article_name,
+#ads > ul > li > a > .article_name,
+#projects > ul > li > a > .ads_date,
+#events > ul > li > a > .ads_date,
+#articles > ul > li > a > .ads_date,
+#ads > ul > li > a > .ads_date,
+#projects > ul > li > a > .ads_name,
+#events > ul > li > a > .ads_name,
+#articles > ul > li > a > .ads_name,
+#ads > ul > li > a > .ads_name {
+  font-weight: bold;
+}
+#projects > ul > li > a > .project_description,
+#events > ul > li > a > .project_description,
+#articles > ul > li > a > .project_description,
+#ads > ul > li > a > .project_description,
+#projects > ul > li > a > .event_description,
+#events > ul > li > a > .event_description,
+#articles > ul > li > a > .event_description,
+#ads > ul > li > a > .event_description,
+#projects > ul > li > a > .article_linked_value,
+#events > ul > li > a > .article_linked_value,
+#articles > ul > li > a > .article_linked_value,
+#ads > ul > li > a > .article_linked_value,
+#projects > ul > li > a > .ads_linked_value,
+#events > ul > li > a > .ads_linked_value,
+#articles > ul > li > a > .ads_linked_value,
+#ads > ul > li > a > .ads_linked_value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+#projects > ul > li > a > .project_date,
+#events > ul > li > a > .project_date,
+#articles > ul > li > a > .project_date,
+#ads > ul > li > a > .project_date,
+#projects > ul > li > a > .event_date,
+#events > ul > li > a > .event_date,
+#articles > ul > li > a > .event_date,
+#ads > ul > li > a > .event_date,
+#projects > ul > li > a > .article_date,
+#events > ul > li > a > .article_date,
+#articles > ul > li > a > .article_date,
+#ads > ul > li > a > .article_date,
+#projects > ul > li > a > .ads_date,
+#events > ul > li > a > .ads_date,
+#articles > ul > li > a > .ads_date,
+#ads > ul > li > a > .ads_date {
+  float: right;
+  width: 80px;
+  margin: 5px 0px 5px 0px;
+}
+#projects > ul > li > a > .article_linked_name,
+#events > ul > li > a > .article_linked_name,
+#articles > ul > li > a > .article_linked_name,
+#ads > ul > li > a > .article_linked_name,
+#projects > ul > li > a > .ads_linked_name,
+#events > ul > li > a > .ads_linked_name,
+#articles > ul > li > a > .ads_linked_name,
+#ads > ul > li > a > .ads_linked_name {
+  float: left;
+  width: 100px;
+  height: 20px;
+  margin: 10px 0px 0px 20px;
+}
+#projects > ul > li > a > .ads_linked_name,
+#events > ul > li > a > .ads_linked_name,
+#articles > ul > li > a > .ads_linked_name,
+#ads > ul > li > a > .ads_linked_name {
+  width: 200px;
+}
+#projects > ul > li > a > .article_linked_value,
+#events > ul > li > a > .article_linked_value,
+#articles > ul > li > a > .article_linked_value,
+#ads > ul > li > a > .article_linked_value,
+#projects > ul > li > a > .ads_linked_value,
+#events > ul > li > a > .ads_linked_value,
+#articles > ul > li > a > .ads_linked_value,
+#ads > ul > li > a > .ads_linked_value {
+  float: left;
+  width: 400px;
+  height: 20px;
+  margin: 10px 0px 0px 20px;
+}
+#projects > ul > li > a > .ads_name,
+#events > ul > li > a > .ads_name,
+#articles > ul > li > a > .ads_name,
+#ads > ul > li > a > .ads_name {
+  float: left;
+  width: 540px;
+  height: 20px;
+  margin: 10px 0px 0px 20px;
+}
+#projects > ul > li > a > .ads_img,
+#events > ul > li > a > .ads_img,
+#articles > ul > li > a > .ads_img,
+#ads > ul > li > a > .ads_img {
+  float: left;
+  width: 100px;
+  height: 120px;
+  margin: 10px 0px 10px 20px;
+}
+#projects > ul > li > a > .ads_img > img,
+#events > ul > li > a > .ads_img > img,
+#articles > ul > li > a > .ads_img > img,
+#ads > ul > li > a > .ads_img > img {
+  width: 100px;
+  height: 100px;
+}
+.more_items {
+  float: right;
+  width: 60px;
+  height: 20px;
+}
+.overview_title {
+  float: left;
+  width: 960px;
+  height: 20px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+#top {
+  float: right;
+  width: 960px;
+  height: 90px;
+  margin: 10px 0px 0px 0px;
+}
+#top > section {
+  float: right;
+  width: 340px;
+  height: 90px;
+}
+#top > section > a {
+  float: right;
+  width: 150px;
+  height: 40px;
+}
+#top > section > a > .new_item {
+  float: right;
+  width: 150px;
+  height: 40px;
+}
+#top > section > .search_input {
+  float: right;
+  width: 295px;
+  height: 30px;
+  margin: 20px 40px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+#bottom {
+  float: left;
+  width: 960px;
+  height: 500px;
+  margin: 10px 0px 0px 0px;
+}
+#bottom > #filter {
+  float: left;
+  width: 350px;
+  height: 30px;
+}
+#bottom > #filter > .filter_info {
+  float: left;
+  width: 350px;
+  height: 20px;
+  font-size: 16px;
+}
+#bottom > #filter > #cboSteden {
+  float: left;
+  width: 150px;
+  height: 20px;
+  margin: 0px 0px 10px 20px;
+}
+#bottom > #filter > ul {
+  float: left;
+  width: 350px;
+  height: 100px;
+  list-style: none;
+}
+#bottom > #filter > ul > li {
+  float: left;
+  width: 350px;
+  height: 20px;
+  margin: 0px 0px 0px 20px;
+}
+#bottom > #projects,
+#bottom #events,
+#bottom #articles,
+#bottom #ads {
+  margin: 0px 0px 0px 200px;
+}
+#new {
+  float: left;
+  width: 960px;
+}
+#new > h1 {
+  float: left;
+  width: 960px;
+  height: 20px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+#new > #label {
+  float: left;
+  width: 260px;
+  margin: 30px 0px 0px 200px;
+}
+#new > #label > p {
+  width: 260px;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+}
+#new > #label > .textarea {
+  margin: 10px 0px 50px 0px;
+}
+#new > #field {
+  float: left;
+  width: 340px;
+  margin: 30px 0px 0px 0px;
+}
+#new > #field > p {
+  float: left;
+  width: 300px;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+}
+#new > #field > p > input {
+  width: 295px;
+  height: 20px;
+  padding: 0px 0px 0px 5px;
+}
+#new > #field > textarea {
+  width: 296px;
+  height: 50px;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+#new > #field > .cbo {
+  width: 296px;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+#new > #field > section {
+  float: left;
+  width: 350px;
+  height: 50px;
+}
+#new > #field > section > p {
+  float: left;
+  width: 350px;
+  height: 15px;
+}
+#new > #field > section > p > input {
+  width: 15px;
+  height: 15px;
+  margin: 10px 0px 0px 0px;
+}
+#new > #field > .img {
+  width: 350px;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+}
+#new > #field > .img > p {
+  float: left;
+  width: 350px;
+  height: 20px;
+}
+#new > #field > .img > p > input {
+  float: left;
+  width: 300px;
+  height: 20px;
+  margin: 0px 0px 0px 0px;
+}
+#new > #field > .img > p > button {
+  width: 40px;
+  height: 20px;
+  margin: 0px 0px 0px 10px;
+}
+#new > #formButton {
+  float: left;
+  width: 960px;
+  margin: 20px 0px 10px 360px;
+}
+#new > #formButton > p {
+  float: left;
+  width: 100px;
+  height: 20px;
+  margin: 0px 0px 0px 20px;
+}
+#new > #formButton > p > button,
+#new > #formButton > p > input {
+  width: 100px;
+  height: 20px;
+}
+.info {
+  float: left;
+  width: 745px;
+  margin: 10px 0px 0px 0px;
+}
+.info > .item_name {
+  float: left;
+  width: 150px;
+  height: 20px;
+  margin: 0px 0px 0px 20px;
+}
+.info > .item_value {
+  float: left;
+  width: 575px;
+  height: 20px;
+}
+.buttons {
+  float: left;
+  width: 215px;
+  margin: 10px 0px 0px 0px;
+}
+.buttons > a > button:nth-child(2) {
+  margin: 0px 0px 0px 10px;
+}
+.buttons > a > button {
+  width: 100px;
+  height: 40px;
+}
+.images {
+  float: left;
+  width: 960px;
+  margin: 10px 0px 0px 0px;
+}
+.images > p {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 76px;
+}
+.images > p > img {
+  width: 100px;
+  height: 100px;
+}
+.members {
+  float: left;
+  width: 960px;
+  margin: 10px 0px 0px 0px;
+}
+.members > ul {
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+}
+.members > ul > li {
+  float: left;
+  width: 300px;
+  height: 20px;
+  margin: 0px 0px 0px 15px;
+}
+.comment_items {
+  float: left;
+  width: 960px;
+}
+.comment_items > ul {
+  list-style: none;
+  margin: 10px 0px 0px 50px;
+}
+.comment_items > ul > li {
+  float: left;
+  width: 760px;
+  height: 100px;
+  border-top-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.comment_items > ul > li > button {
+  float: right;
+  width: 100px;
+  height: 20px;
+  margin: 10px 10px 0px 0px;
+}
+.comment_items > ul > li > .comment_reaction {
+  float: left;
+  width: 500px;
+  height: 50px;
+  margin: 20px 0px 0px 60px;
+}
+.comment_items > ul > li > .comment_info {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.comment_items > ul > li > .comment_info > .comment_date,
+.comment_items > ul > li > .comment_info > .comment_img,
+.comment_items > ul > li > .comment_info > .comment_name {
+  float: left;
+  width: 80px;
+  margin: 5px 0px 0px 20px;
+}
+.comment_items > ul > li > .comment_info > .comment_date,
+.comment_items > ul > li > .comment_info > .comment_name {
+  text-align: center;
+}
+.comment_section {
+  float: left;
+  width: 700px;
+  height: 160px;
+  margin: 10px 0px 0px 50px;
+}
+.comment_section > form > p {
+  margin: 0px 0px 10px 10px;
+}
+.comment_section > form > textarea {
+  width: 750px;
+  height: 50px;
+}
+.comment_section > form > input {
+  float: right;
+  width: 100px;
+  height: 20px;
+  margin: 10px 0px 0px 0px;
+}
